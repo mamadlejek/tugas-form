@@ -70,7 +70,7 @@ export default function FormTSX() {
                     Form Registrasi (TSX)
                 </h2>
 
-                <form className="space-y-4" onSubmit={handleSubmit}>
+                <form className="space-y-4" onSubmit={handleSubmit} noValidate>
                     <div>
                         <label className="block text-gray-700 mb-1">Nama Lengkap</label>
                         <input
