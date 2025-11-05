@@ -63,7 +63,7 @@ export default function FormJSX() {
                     Form Registrasi
                 </h2>
 
-                <form className="space-y-4" onSubmit={handleSubmit}>
+                <form className="space-y-4" onSubmit={handleSubmit} noValidate>
                     <div>
                         <label className="block text-gray-700 mb-1">Nama Lengkap</label>
                         <input
@@ -76,7 +76,7 @@ export default function FormJSX() {
                                     ? "border-red-500 bg-red-50 focus:ring-red-300"
                                     : "border-gray-300 focus:ring-purple-400"
                                 }`}
-                            required
+                            
                         />
                         {errors.nama && <p className="text-red-500 text-sm mt-1">{errors.nama}</p>}
                     </div>
@@ -93,7 +93,7 @@ export default function FormJSX() {
                                     ? "border-red-500 bg-red-50 focus:ring-red-300"
                                     : "border-gray-300 focus:ring-purple-400"
                                 }`}
-                            required
+                            
                         />
                         {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                     </div>
@@ -110,7 +110,7 @@ export default function FormJSX() {
                                     ? "border-red-500 bg-red-50 focus:ring-red-300"
                                     : "border-gray-300 focus:ring-purple-400"
                                 }`}
-                            required
+                            
                         />
                         {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}
                     </div>
